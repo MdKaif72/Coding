@@ -1,5 +1,8 @@
 package dsa.blind75Question.linkedlist;
 
+/*
+LC 206
+ */
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
 
