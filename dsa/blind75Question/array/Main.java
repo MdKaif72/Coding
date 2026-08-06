@@ -1,6 +1,7 @@
 package dsa.blind75Question.array;
 
 import dsa.blind75Question.binary.SumOfInteger;
+import dsa.blind75Question.string.LongestRepeatingCharacterReplacement;
 import dsa.blind75Question.string.LongestSubstringWithoutRepeatingChr;
 
 import java.util.Arrays;
@@ -14,6 +15,7 @@ public class Main {
         printArray(ProductOfArrayExceptItself.productExceptSelf(new int[]{1,2,3,4}));
         System.out.println(SumOfInteger.getSum(9,111));
         System.out.println(LongestSubstringWithoutRepeatingChr.lengthOfLongestSubstring("pwwkewxpw"));
+        System.out.println(LongestRepeatingCharacterReplacement.characterReplacement("AABABBA",1));
 
     }
 
