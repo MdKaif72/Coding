@@ -27,4 +27,40 @@ Since the largest window of s only has one 'a', return empty string.
  */
 
 public class MinimumWindowSubstring {
+
+    public static String minWindow(String s, String t) {
+        int [] mapT=new int[256];
+        int [] mapS=new int[256];
+
+        //This will store the actual freq of character which need to be satisfied
+        for(char ch:t.toCharArray()){
+            mapT[ch]++;
+        }
+
+        int left =0, right=0 , minLen=Integer.MAX_VALUE,minStart=0;
+        for(;right<s.length();right++){
+            mapS[s.charAt(right)]++;
+
+            //This loop while truncate as much as it satisfy
+            while(isSatisfied(mapS,mapT)){
+                if(right-left+1<minLen){
+                    minLen=right-left+1;
+                    minStart=left;
+                }
+                mapS[s.charAt(left++)]--;
+            }
+        }
+        return minLen==Integer.MAX_VALUE ? "" : s.substring(minStart,minStart+minLen);
+
+
+
+    }
+    public static boolean isSatisfied(int [] mapS, int []mapT){
+        for(int i=0;i<256;i++){
+            if(mapS[i]<mapT[i])
+                return false;
+        }
+        return true;
+    }
+
 }
