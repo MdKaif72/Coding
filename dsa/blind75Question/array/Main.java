@@ -18,7 +18,9 @@ public class Main {
 //        System.out.println(LongestSubstringWithoutRepeatingChr.lengthOfLongestSubstring("pwwkewxpw"));
 //        System.out.println(LongestRepeatingCharacterReplacement.characterReplacement("AABABBA",1));
 //        System.out.println(LongestRepeatingCharacterReplacement.characterReplacement("AABABBA",1));
-        System.out.println(MinimumWindowSubstring.minWindow("ADOBECODEBANC","ABC"));
+//        System.out.println(MinimumWindowSubstring.minWindow("ADOBECODEBANC","ABC"));
+//        System.out.println(MaximumSubArray.maxSubArray(new int[]{-2}));
+        System.out.println(MaximumProductSubArray.maxProduct(new int[]{2,3,-2,4}));
     }
 
     public static void printArray(int []nums){

@@ -67,7 +67,6 @@ public class ProductOfArrayExceptItself {
     public static int[] productExceptSelf(int[] nums) {
         int [] leftArray=new int[nums.length];
         int [] rightArray=new int[nums.length];
-        leftArray[0]=1;
         int prod=1;
         for(int i=0;i<nums.length;i++){
             leftArray[i]=prod;
@@ -80,7 +79,6 @@ public class ProductOfArrayExceptItself {
             prod*=nums[i];
 
         }
-        System.out.println(Arrays.toString(rightArray));
         for(int i=0;i<nums.length;i++){
             rightArray[i]=rightArray[i]*leftArray[i];
         }
