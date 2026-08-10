@@ -37,7 +37,7 @@ public class SubTreeOfAnotherTree {
         if (root == null)
             return "N";
 
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder("^");
 
         sb.append(root.val);
         sb.append(preOrder(root.left));
