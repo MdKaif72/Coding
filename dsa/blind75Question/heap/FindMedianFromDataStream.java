@@ -43,6 +43,8 @@ Follow up:
 If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
 If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
 
+//max heap will contain a less value than or equal to  min heap value
+
  */
 
 import java.util.Comparator;
