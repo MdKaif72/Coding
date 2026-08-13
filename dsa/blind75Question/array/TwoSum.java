@@ -38,7 +38,7 @@ public class TwoSum {
 
         for(int i=0;i<nums.length;i++){
 
-            int currElemRequired=Math.abs(target-nums[i]);
+            int currElemRequired=target-nums[i];
 
             if(map.containsKey(currElemRequired))
                 return new int[]{i,map.get(currElemRequired)};
