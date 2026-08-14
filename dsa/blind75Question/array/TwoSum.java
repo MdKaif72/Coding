@@ -2,7 +2,8 @@ package dsa.blind75Question.array;
 
 /*
 Leet Code 1
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to
+target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -34,16 +35,16 @@ public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
 
 
-        HashMap<Integer,Integer> map=new HashMap<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-        for(int i=0;i<nums.length;i++){
+        for (int i = 0; i < nums.length; i++) {
 
-            int currElemRequired=target-nums[i];
+            int currElemRequired = target - nums[i];
 
-            if(map.containsKey(currElemRequired))
-                return new int[]{i,map.get(currElemRequired)};
+            if (map.containsKey(currElemRequired))
+                return new int[]{i, map.get(currElemRequired)};
             else
-                map.put(nums[i],i);
+                map.put(nums[i], i);
 
         }
         return new int[]{};
