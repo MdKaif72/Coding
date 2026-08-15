@@ -20,7 +20,9 @@ public class Main {
 //        System.out.println(LongestRepeatingCharacterReplacement.characterReplacement("AABABBA",1));
 //        System.out.println(MinimumWindowSubstring.minWindow("ADOBECODEBANC","ABC"));
 //        System.out.println(MaximumSubArray.maxSubArray(new int[]{-2}));
-        System.out.println(MaximumProductSubArray.maxProduct(new int[]{2,3,-2,4}));
+//        System.out.println(MaximumProductSubArray.maxProduct(new int[]{2,3,-2,4}));
+//        System.out.println(ThreeSum.threeSum(new int[]{0,0,0}));
+        System.out.println(ContainerWithMostWater.maxAreaByBruteForce(new int[]{1,8,6,2,5,4,8,3,7}));
     }
 
     public static void printArray(int []nums){
