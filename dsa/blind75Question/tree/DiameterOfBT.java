@@ -31,13 +31,30 @@ The number of nodes in the tree is in the range [1, 104].
 public class DiameterOfBT {
 
     public int diameterOfBinaryTree(TreeNode root) {
+        int[] maxDiameter = new int[1];
+        depth(root, maxDiameter);
+        return maxDiameter[0];
+    }
+
+    public int diameterOfBinaryTreeBrute(TreeNode root) {
         if (root == null)
             return 0;
         int leftDepth = depth(root.left);
         int rightDepth = depth(root.right);
-        return Math.max(leftDepth + rightDepth, Math.max(diameterOfBinaryTree(root.left),
-                diameterOfBinaryTree(root.right)));
+        return Math.max(leftDepth + rightDepth, Math.max(diameterOfBinaryTreeBrute(root.left),
+                diameterOfBinaryTreeBrute(root.right)));
 
+
+    }
+
+    private int depth(TreeNode node, int[] maxDiameter) {
+
+        if (node == null)
+            return 0;
+        int left = depth(node.left, maxDiameter);
+        int right = depth(node.right, maxDiameter);
+        maxDiameter[0] = Math.max(maxDiameter[0], (left + right));
+        return 1 + Math.max(left, right);
 
     }
 
