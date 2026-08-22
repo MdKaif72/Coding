@@ -21,6 +21,7 @@ public class Main {
 //        System.out.println(ThreeSum.threeSum(new int[]{0,0,0}));
 //        System.out.println(ContainerWithMostWater.maxAreaByBruteForce(new int[]{1,8,6,2,5,4,8,3,7}));
 
+        printArray(SquaresOfSortedArray.sortedSquares(new int[]{-4,-1,0,3,10}));
 
     }
 
