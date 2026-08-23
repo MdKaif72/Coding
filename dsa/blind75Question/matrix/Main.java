@@ -5,8 +5,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        int[][] ans = FloodFill.floodFill(new int[][]{{0, 0, 0}, {0, 0, 0}}, 0, 0, 0);
-      printMatrix(MatrixZeroOne.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
+//        int[][] ans = FloodFill.floodFill(new int[][]{{0, 0, 0}, {0, 0, 0}}, 0, 0, 0);
+//      printMatrix(MatrixZeroOne.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
+        System.out.println(RottingOrange.orangesRotting(new int[][]{{2,1,1},{1,1,0},{0,1,1}}));
     }
 
     private static void printMatrix(int[][] matrix) {
