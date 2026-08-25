@@ -21,11 +21,14 @@ public class Main {
 //        System.out.println(ThreeSum.threeSum(new int[]{0,0,0}));
 //        System.out.println(ContainerWithMostWater.maxAreaByBruteForce(new int[]{1,8,6,2,5,4,8,3,7}));
 
-        printArray(SquaresOfSortedArray.sortedSquares(new int[]{-4,-1,0,3,10}));
+//        printArray(SquaresOfSortedArray.sortedSquares(new int[]{-4,-1,0,3,10}));
+        int[] arr = new int[]{2, 0, 2, 1, 1, 0};
+        SortColor.sortColors(arr);
+        printArray(arr);
 
     }
 
-    public static void printArray(int []nums){
+    public static void printArray(int[] nums) {
         System.out.println(Arrays.toString(nums));
     }
 }
