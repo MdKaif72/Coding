@@ -23,8 +23,14 @@ public class Main {
 
 //        printArray(SquaresOfSortedArray.sortedSquares(new int[]{-4,-1,0,3,10}));
         int[] arr = new int[]{2, 0, 2, 1, 1, 0};
-        SortColor.sortColors(arr);
-        printArray(arr);
+//        SortColor.sortColors(arr);
+//        printArray(arr);
+//        System.out.println(PartitionToKEqualSubsetSum.canPartitionKSubsets(new int[]{6,5,9,6,3,5,1,10,4,1,4,3,9,9,3,
+//                3},9));
+
+
+        System.out.println(Subset.subsets(new int[]{1,2,3}));
+
 
     }
 
