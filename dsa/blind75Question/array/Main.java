@@ -29,8 +29,9 @@ public class Main {
 //                3},9));
 
 
-        System.out.println(Subset.subsets(new int[]{1,2,3}));
+//        System.out.println(Subset.subsets(new int[]{1,2,3}));
 
+        System.out.println(MinSizeSubarraySum.minSubArrayLen(7,new int[]{2,3,1,2,4,3}));
 
     }
 
